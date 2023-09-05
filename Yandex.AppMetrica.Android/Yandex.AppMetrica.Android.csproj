@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>YandexAppMetrica.Android</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Jars\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Google.Android.InstallReferrer" Version="1.0.0.5" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Yandex.AppMetrica\Yandex.AppMetrica.csproj" />
+  </ItemGroup>
+</Project>

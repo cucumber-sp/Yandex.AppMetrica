@@ -1,0 +1,4 @@
+namespace Yandex.AppMetrica.iOS
+{
+
+}

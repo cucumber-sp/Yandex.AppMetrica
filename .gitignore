@@ -1,0 +1,16 @@
+
+.idea/
+
+.vs/
+
+Yandex.AppMetrica/bin/
+
+Yandex.AppMetrica/obj/
+
+Yandex.AppMetrica.Android/bin/
+
+Yandex.AppMetrica.iOS/bin/
+
+Yandex.AppMetrica.iOS/obj/
+
+Yandex.AppMetrica.Android/obj/
