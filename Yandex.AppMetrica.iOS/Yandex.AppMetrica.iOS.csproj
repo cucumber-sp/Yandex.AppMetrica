@@ -1,22 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net7.0-ios</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>true</ImplicitUsings>
-    <IsBindingProject>true</IsBindingProject>
-  </PropertyGroup>
+    <PropertyGroup>
+      <TargetFramework>net7.0-ios</TargetFramework>
+      <Nullable>enable</Nullable>
+      <ImplicitUsings>true</ImplicitUsings>
+      <IsBindingProject>true</IsBindingProject>
+      <PackOnBuild>True</PackOnBuild>
+        <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+    </PropertyGroup>
 
   <ItemGroup>
-    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <NativeReference Include="YandexMobileMetrica.xcframework">
+    <NativeReference Include="Frameworks/YandexMobileMetrica.xcframework">
       <Kind>Framework</Kind>
       <Frameworks></Frameworks>
     </NativeReference>
-	<NativeReference Include="YandexMobileMetricaCrashes.xcframework">
+	<NativeReference Include="Frameworks/YandexMobileMetricaCrashes.xcframework">
 		<Kind>Framework</Kind>
 		<Frameworks></Frameworks>
 	</NativeReference>
